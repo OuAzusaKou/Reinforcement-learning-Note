@@ -3,13 +3,13 @@
 ***Reinforcement learning*** is learning what to do—how to map situations(***state***) to actions(***policy***)—so
 as to maximize a numerical reward signal.  
 There are two class method,  
-one: we first evaluate value of state or state-action (***value function***) condition with current policy called ***policy evaluation(prediction)***, then improve the policy through value function called ***policy improvement*** ,We use the term ***generalized policy iteration (GPI)*** to refer to the general idea of letting policy evaluation and policy improvement processes interact, independent of the granularity and other details of the two processes.   
+one: we first evaluate value of state or state-action (***value function***) condition with current policy called ***policy evaluation***(prediction), then improve the policy through value function called ***policy improvement*** ,We use the term ***generalized policy iteration (GPI)*** to refer to the general idea of letting policy evaluation and policy improvement processes interact, independent of the granularity and other details of the two processes.   
 **We must say that as long as both processes continue to update all states(this is a sufficient conditions ), the ultimate result is typically the same—convergence to the optimal value function and an optimal policy.**
 
 ## So the first problem is How to evaluate the value function.  
 We have some methods discribe in the graph below.  
 
-![Prediction method](http://localhost:8888/files/reinforce_note-1.png)  
+![Prediction method](https://github.com/OuAzusaKou/Reinforcement-learning-Note/blob/master/img-folder/reinforce_note-1.png?raw=true)  
 
 First we have the $$\upsilon_\pi=\sum_{a}\pi(a|s)\sum_{s',r}p(s',r|s,a)[r+\gamma\upsilon_\pi(s')]$$
 From this equation,we use sample inplace the expection,and estimate value function inplace the true value function,this will generate two error.   
