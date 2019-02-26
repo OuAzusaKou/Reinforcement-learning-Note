@@ -9,8 +9,9 @@ one: we first evaluate value of state or state-action (***value function***) con
 ## So the first problem is How to evaluate the value function.  
 We have some methods discribe in the graph below.  
 
-![Prediction method](https://github.com/OuAzusaKou/Reinforcement-learning-Note/blob/master/img-folder/reinforce_note-1.png?raw=true)  
-
+<p align="center">
+  <img src="https://github.com/OuAzusaKou/Reinforcement-learning-Note/blob/master/img-folder/reinforce_note-1.png">
+</p>
 First we have the $$\upsilon_\pi=\sum_{a}\pi(a|s)\sum_{s',r}p(s',r|s,a)[r+\gamma\upsilon_\pi(s')]$$
 From this equation,we use sample inplace the expection,and estimate value function inplace the true value function,this will generate two error.   
 and then we get some different methods upto the degree of inplace from two dimensions-width and deepth(bootstrap).  
