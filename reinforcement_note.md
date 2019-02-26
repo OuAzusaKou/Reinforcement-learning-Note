@@ -102,21 +102,18 @@ So get these algorithms.
  
   When we have some real experience, It's stupid only update knowledge for this state, we can also update knowledge(value) for any state relative with this state-   Drawing inferences about other cases from one instance.  
   
-## And planning divide in two types,they have different focus.
- + #### Background planning.  
- We planning tagert for optimal policy of entire states.
-     + So one obviously method is planning backward on the predecessors of states whose values have recently changed called ***Prioritized sweeping***.  
-     Planning backward is benifit for optimizing policy on situation we have meeted.  
-     + ***On-policy trajectory sampling*** focuses on states or state–action pairs that the agent is likely to
-encounter when controlling its environment.
-Forward planning is benifit for optimizing policy on situation we will encounter. 
+## And planning divide in two types,they have different focus.  
++ #### Background planning.  
+  We planning tagert for optimal policy of entire states.  
+    + So one obviously method is planning backward on the predecessors of states whose values have recently changed called ***Prioritized sweeping***.  
+    Planning backward is benifit for optimizing policy on situation we have meeted.  
+    + ***On-policy trajectory sampling*** focuses on states or state–action pairs that the agent is likely to encounter when controlling its environment.  
+    Forward planning is benifit for optimizing policy on situation we will encounter. 
   
- - #### Decision time planning
- We planning tagert for optimal policy of one particular state (current state).
-     + The classical state-space planning methods in artificial intelligence are decision-time planning methods collectively known as ***heuristic search***.  
-     
-     + ***Rollout algorithms*** are decision-time planning algorithms based on Monte Carlo control
-applied to simulated trajectories that all begin at the current environment state.
+- #### Decision time planning  
+  We planning tagert for optimal policy of one particular state (current state).  
+    + The classical state-space planning methods in artificial intelligence are decision-time planning methods collectively known as ***heuristic search***.  
+    + ***Rollout algorithms*** are decision-time planning algorithms based on Monte Carlo control applied to simulated trajectories that all begin at the current environment state.
 
 # MCTS  
 1. ***Selection***. Starting at the root node, a tree policy based on the action values
