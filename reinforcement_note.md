@@ -12,7 +12,13 @@ We have some methods discribe in the graph below.
 <p align="center">
   <img src="https://github.com/OuAzusaKou/Reinforcement-learning-Note/blob/master/img-folder/reinforce_note-1.png">
 </p>
-First we have the $$\upsilon_\pi=\sum_{a}\pi(a|s)\sum_{s',r}p(s',r|s,a)[r+\gamma\upsilon_\pi(s')]$$
+First we have the  
+  
+  
+  <p align="center">
+    <img src="https://github.com/OuAzusaKou/Reinforcement-learning-Note/blob/master/img-folder/CodeCogsEqn.png">
+  </p>  
+
 From this equation,we use sample inplace the expection,and estimate value function inplace the true value function,this will generate two error.   
 and then we get some different methods upto the degree of inplace from two dimensions-width and deepth(bootstrap).  
 
